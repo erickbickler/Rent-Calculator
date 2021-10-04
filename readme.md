@@ -11,3 +11,9 @@ To connect to your own instance, create a file named .env with a line structured
 `CONNECTION_STRING = "your_connection_string"`
 
 It will write each month as a document in a collection called monthly_data in a db called rent
+
+To run the program run:
+`python rent.py`
+
+To run in debug mode run:
+`python rent.py True`

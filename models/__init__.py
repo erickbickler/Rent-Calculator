@@ -1,2 +1,1 @@
-import person
-import expense
+from models.person import Person

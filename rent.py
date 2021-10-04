@@ -1,12 +1,15 @@
 import json
 import os
+import sys
 import pymongo
 import models
 from dotenv import load_dotenv, find_dotenv
 
 OUTPUT_FILE = "monthlydata.json"
 INPUT_FILE = "expenses.json"
-DEBUG = False
+
+# set debug if set from command line
+DEBUG = sys.argv[1] == 'True' if len(sys.argv) > 1 else False
 
 # load environment variables from .env for mongo db instance
 load_dotenv(find_dotenv())
