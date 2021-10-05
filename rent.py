@@ -29,6 +29,8 @@ def match(name):
     raise Exception(f"{name} roommate not found")
 
 if __name__ == '__main__':
+    if DEBUG:
+        print("Running in debug mode")
     print("\nRent Calculator built on python 3.7")
     print("Made by Erick Bickler Copyright 2021 \n")
     month = input("Which month is this for? ")
